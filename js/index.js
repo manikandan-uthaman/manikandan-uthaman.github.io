@@ -1,6 +1,6 @@
 $(document).ready(function () {
   getPostsHtml = function () {
-    var posts = getPosts(); // from post-service.js
+    var posts = getRecentPosts(5); // from post-service.js
     var postHtml = "";
     posts.forEach(post => {
       var post = `
@@ -21,6 +21,5 @@ $(document).ready(function () {
     });
     $(".post-row").append(postHtml);
   };
-
   getPostsHtml();
 });

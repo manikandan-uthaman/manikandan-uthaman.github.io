@@ -39,6 +39,10 @@ $(document).ready(function () {
   };
 
   displayNotFound = function () {
+    $(".intro-header").attr(
+      "style",
+      "background-image: url('../img/not-found-bg.jpg')"
+    );
     $(".post-heading").append("<h1>Sorry, the request post is not found</h1>");
   };
 
